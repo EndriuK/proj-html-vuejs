@@ -85,7 +85,7 @@ export default {
         </div>
       </div>
     </div>
-    <!-- Services Section -->
+    
     <div class="about-company-section">
       <div class="container">
         <div class="row">
@@ -126,11 +126,82 @@ export default {
         </div>
       </div>
     </div>
+
+    <div class="actions-projects-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-center">
+                  <p class="subtitle">WE DO MORE FOR EVERYONE</p>
+                  <h2>Actions & <span class="highlight">Projects</span></h2>
+              </div>
+          </div>
+          <div class="row text-center mb-4">
+              <div class="col-12">
+                  <button class="btn btn-filter active">ALL</button>
+                  <button class="btn btn-filter">INSTITUTIONAL</button>
+                  <button class="btn btn-filter">SOCIAL</button>
+                  <button class="btn btn-filter">EVENTS</button>
+                  <button class="btn btn-filter">INNOVATION</button>
+                  <button class="btn btn-filter">ENVIRONMENT</button>
+                  <button class="btn btn-filter">TECHNOLOGY</button>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card project-card">
+                      <img src="../assets/project-1.jpg" class="card-img-top" alt="Project Image 1">
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <h5 class="card-title">Academic professional program in social media</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card project-card">
+                      <img src="../assets/project-2.jpg" class="card-img-top" alt="Project Image 2">
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <h5 class="card-title">President's speech at the annual meeting</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card project-card">
+                      <img src="../assets/project-3.jpg" class="card-img-top" alt="Project Image 3">
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <h5 class="card-title">International business trip in Shanghai</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card project-card">
+                      <img src="../assets/project-4.jpg" class="card-img-top" alt="Project Image 4">
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <h5 class="card-title">Technology workshop with education theme</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card project-card">
+                      <img src="../assets/project-5.jpg" class="card-img-top" alt="Project Image 5">
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <h5 class="card-title">Donation of clothes and food to the partner NGO</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card project-card">
+                      <img src="../assets/project-6.jpg" class="card-img-top" alt="Project Image 6">
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <h5 class="card-title">Confraternization of the procurement team</h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
   </template>
   
-  
 
-  <style lang="scss" scoped>
+<style lang="scss" scoped>
   .services-section {
     background-color: #f5f9f7;
     padding: 60px 0;
@@ -288,7 +359,76 @@ export default {
       margin-top: 20px;
     }
   }
+
+  .actions-projects-section {
+      padding: 60px 0;
+  
+      .subtitle {
+          color: #5ea3a3;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+      }
+  
+      h2 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: #354052;
+  
+          .highlight {
+              background-color: #e2e3e799;
+              color: #058283;
+              padding: 0 0.5rem;
+          }
+      }
+  
+      .btn-filter {
+          background-color: transparent;
+          border: none;
+          color: #7a8a97;
+          font-weight: bold;
+          margin: 0 10px;
+          padding: 10px 20px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+  
+          &.active {
+              background-color: #e2e3e799;
+              color: #058283;
+              border-radius: 5px;
+          }
+  
+          &:hover {
+              color: #058283;
+          }
+      }
+  
+      .project-card {
+          position: relative;
+          border: none;
+          border-radius: 10px;
+          overflow: hidden;
+          margin-bottom: 30px;
+  
+          .card-img-overlay {
+              background: rgba(0, 0, 0, 0.4);
+              color: white;
+              padding: 15px;
+              border-radius: 0 0 10px 10px;
+          }
+  
+          .card-title {
+              font-size: 1rem;
+              font-weight: bold;
+              margin: 0;
+          }
+      }
+  }
 </style>
 
 
+
    
+
+  
