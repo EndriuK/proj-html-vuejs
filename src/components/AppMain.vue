@@ -231,6 +231,70 @@ export default {
         </div>
       </div>
 
+      <div class="contact-section">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-6">
+              <h6>SEND A MESSAGE</h6>
+              <h2>Get in <span class="highlight">Touch</span></h2>
+              <p>We will respond to your message as soon as possible.</p>
+              
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" id="name" class="form-control" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="email" id="email" class="form-control" placeholder="Email">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" id="phone" class="form-control" placeholder="Phone">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select id="moreinfo" class="form-control">
+                        <option value="disabledSelect">More Info</option>
+                        <option value="consultation">Consultation</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea id="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">SEND</button>
+              </form>
+            </div>
+    
+            
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
+              <h3>Example Inc.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+              
+              <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> +1 (305) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> hello@example.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Main Avenue, 987</p>
+              </div>
+              <button class="btn btn-outline">VIEW MAP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
   </div>
   </template>
   
@@ -522,14 +586,92 @@ export default {
       object-fit: contain;
     }
   }
+
+  .contact-section {
+    padding: 60px 0;
+
+    h6 {
+      color: #00b7c2;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #354052;
+      margin-bottom: 20px;
+
+      .highlight {
+        background-color: #e2e3e799;
+        color: #058283;
+        padding: 0 0.5rem;
+      }
+    }
+
+    p {
+      color: #7a8a97;
+      margin-bottom: 20px;
+    }
+
+    form {
+      .form-group {
+        margin-bottom: 15px;
+
+        .form-control {
+          border: 1px solid #ced4da;
+          border-radius: 4px;
+          padding: 10px;
+          width: 100%;
+          background-color: #f5f5f5;
+          color: #495057;
+        }
+      }
+
+      .btn-submit {
+        background-color: #00b7c2;
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        margin-top: 10px;
+      }
+    }
+
+    .contact-info {
+      p {
+        margin-bottom: 10px;
+        color: #354052;
+
+        i {
+          margin-right: 10px;
+          color: #00b7c2;
+        }
+      }
+    }
+
+    .btn-outline {
+      color: #00b7c2;
+      border: 2px solid #00b7c2;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+  }
 </style>
 
 
 
 
+
    
 
   
 
    
   
+
+
+  
+
+   
