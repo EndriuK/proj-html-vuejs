@@ -197,9 +197,44 @@ export default {
               </div>
           </div>
       </div>
+      
+
+      <div class="results-section">
+        <div class="container text-center">
+          <h6>What are we doing</h6>
+          <h2><span class="highlight">Results</span> in Numbers</h2>
+          <div class="row">
+            <div class="col-3">
+              <h3>128</h3>
+              <p>Certifications</p>
+            </div>
+            <div class="col-3">
+              <h3>230</h3>
+              <p>Employees</p>
+            </div>
+            <div class="col-3">
+              <h3>517</h3>
+              <p>Customers</p>
+            </div>
+            <div class="col-3">
+              <h3>94</h3>
+              <p>Countries Served</p>
+            </div>
+          </div>
+        </div>
+        <div class="technologies">
+          <img src="../assets/logo-4.png" alt="jQuery" />
+          <img src="../assets/logo-5.png" alt="Less" />
+          <img src="../assets/logo-1.png" alt="WooCommerce" />
+          <img src="../assets/logo-2.png" alt="WordPress" />
+          <img src="../assets/logo-3.png" alt="Pingdom" />
+        </div>
+      </div>
+
   </div>
   </template>
   
+
 
 <style lang="scss" scoped>
   .services-section {
@@ -361,74 +396,140 @@ export default {
   }
 
   .actions-projects-section {
-      padding: 60px 0;
-  
-      .subtitle {
-          color: #5ea3a3;
-          text-transform: uppercase;
-          font-weight: bold;
-          letter-spacing: 1px;
-          margin-bottom: 10px;
+    padding: 60px 0;
+
+    .subtitle {
+      color: #5ea3a3;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #354052;
+
+      .highlight {
+        background-color: #e2e3e799;
+        color: #058283;
+        padding: 0 0.5rem;
       }
-  
-      h2 {
-          font-size: 2.5rem;
-          font-weight: bold;
-          color: #354052;
-  
-          .highlight {
-              background-color: #e2e3e799;
-              color: #058283;
-              padding: 0 0.5rem;
-          }
+    }
+
+    .btn-filter {
+      background-color: transparent;
+      border: none;
+      color: #7a8a97;
+      font-weight: bold;
+      margin: 0 10px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &.active {
+        background-color: #e2e3e799;
+        color: #058283;
+        border-radius: 5px;
       }
-  
-      .btn-filter {
-          background-color: transparent;
-          border: none;
-          color: #7a8a97;
-          font-weight: bold;
-          margin: 0 10px;
-          padding: 10px 20px;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-  
-          &.active {
-              background-color: #e2e3e799;
-              color: #058283;
-              border-radius: 5px;
-          }
-  
-          &:hover {
-              color: #058283;
-          }
+
+      &:hover {
+        color: #058283;
       }
-  
-      .project-card {
-          position: relative;
-          border: none;
-          border-radius: 10px;
-          overflow: hidden;
-          margin-bottom: 30px;
-  
-          .card-img-overlay {
-              background: rgba(0, 0, 0, 0.4);
-              color: white;
-              padding: 15px;
-              border-radius: 0 0 10px 10px;
-          }
-  
-          .card-title {
-              font-size: 1rem;
-              font-weight: bold;
-              margin: 0;
-          }
+    }
+
+    .project-card {
+      position: relative;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+
+      .card-img-overlay {
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
       }
+
+      .card-title {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+  }
+
+  .results-section {
+    background-image: url('../assets/bg-7.jpg');
+    background-size: cover;
+    padding: 80px 0;
+    color: white;
+
+    h6 {
+      color: #00b7c2;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .highlight {
+      background-color: #05445e;
+      padding: 0 5px;
+      color: #ffffff;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .row > .col-3 {
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .technologies {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .technologies img {
+      max-width: 150px;
+      max-height: 80px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
   }
 </style>
 
 
 
+
    
 
+  
+
+   
   
