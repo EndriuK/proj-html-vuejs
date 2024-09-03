@@ -47,7 +47,7 @@
     <div class="bottom-header position-relative">
         <div class="overlay"></div>
         <div class="container text-center">
-            <img src="../assets/bg-parallax.png" alt="Team Image" class="img-fluid centered-image">
+            <!-- <img src="../assets/bg-parallax.png" alt="Team Image" class="img-fluid centered-image"> -->
             <div class="content">
                 <h1 class="display-4">Ready <span class="text-highlight">Team</span></h1>
                 <p>No matter what your company needs, we will be ready to assist you in the best possible way.</p>
@@ -89,6 +89,8 @@
     margin-right: 1rem;
     color: #0D1B2A;
     font-weight: 500;
+    text-transform: uppercase;
+    
 }
 
 .navbar-nav .btn-primary {
@@ -96,16 +98,20 @@
     border: none;
     padding: 0.5rem 1rem;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .bottom-header {
-    padding: 4rem 0;
-    background-color: #f8f9fa; 
+    background-image: url('../assets/bg-parallax.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 12rem 0; 
     position: relative;
     z-index: 1;
 }
 
-.overlay {
+ .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -121,7 +127,7 @@
     margin: 0 auto;
     z-index: 3;
     position: relative;
-}
+} 
 
 .content {
     z-index: 4;
@@ -158,4 +164,7 @@
 
 
 
+
+
+ 
 

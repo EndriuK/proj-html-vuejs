@@ -91,7 +91,7 @@ export default {
         <div class="row">
           <div class="col-12 col-md-6">
             <h6>ABOUT THE NETWORK</h6>
-            <h2>The <span class="highlight">Company</span></h2>
+            <h2><span class="highlight">The</span> Company</h2>
             <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes, and related services to select clients.</p>
             <div class="features">
               <div class="feature">
@@ -342,6 +342,7 @@ export default {
         font-weight: bold;
         cursor: pointer;
         border-radius: 5px;
+        text-transform: uppercase;
 
         &:hover {
           background-color: #499090;

@@ -18,7 +18,7 @@ export default {
         { text: 'About', href: '#' },
         { text: 'Projects', href: '#' },
         { text: 'Results', href: '#' },
-        { text: 'Contact', href: '#', isButton: true }
+        { text: 'GET IN TOUCH', href: '#', isButton: true }
       ],
       footerLinks: [
         { text: 'Privacy Policy', href: '#' },
